@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "DanzmannBitmasking",
+	"Description": "Simplifies bitmasks use in C++ and Blueprints by providing generic functions to most common operations.",
+	"Category": "Danzmann",
+	"CreatedBy": "Vicente Danzmann",
+	"CreatedByURL": "https://github.com/iVcente",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "DanzmannBitmasking",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
