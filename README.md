@@ -98,5 +98,5 @@ class AExampleActor : public AActor
         int32 Debuffs = 0;
 };
 ```
-
+---
 More info on enums can be found [here](https://www.notion.so/danzmann/Enums-53e162396fee4495b4475ee66c22081e?pvs=4).
