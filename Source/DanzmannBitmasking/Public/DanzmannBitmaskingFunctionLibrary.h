@@ -86,7 +86,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @param FlagsToAdd Bitflags to add/set in Flags.
 		 * @note To add/set more than one flag, you can call the function like this: AddFlags(Flags, EFlags::Flag1 | EFlags::Flag2);
 		 */
-		template <typename TEnum>
+		template<typename TEnum>
 		static void AddFlags(int32& Flags, const TEnum FlagsToAdd)
 		{
 			static_assert(TIsEnum<TEnum>::Value, TEXT("Should only call this with Enum types."));
@@ -99,7 +99,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @param FlagsToRemove Bitflags to remove/unset in Flags.
 		 * @note To remove/unset more than one flag, you can call the function like this: RemoveFlags(Flags, EFlags::Flag1 | EFlags::Flag2);
 		 */
-		template <typename TEnum>
+		template<typename TEnum>
 		static void RemoveFlags(int32& Flags, const TEnum FlagsToRemove)
 		{
 			static_assert(TIsEnum<TEnum>::Value, TEXT("Should only call this with enum types."));
@@ -112,7 +112,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @param FlagsToFlip Bitflags to flip their values in Flags.
 		 * @note To flip more than one flag, you can call the function like this: FlipFlags(Flags, EFlags::Flag1 | EFlags::Flag2);
 		 */
-		template <typename TEnum>
+		template<typename TEnum>
 		static void FlipFlags(int32& Flags, const TEnum FlagsToFlip)
 		{
 			static_assert(TIsEnum<TEnum>::Value, TEXT("Should only call this with enum types."));
@@ -126,7 +126,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return Whether all FlagsToCheck are added/set in Flags.
 		 * @note To check if more than one flag is added/set, you can call the function like this: HasAllFlags(Flags, EFlags::Flag1 | EFlags::Flag2);
 		 */
-		template <typename TEnum>
+		template<typename TEnum>
 		static bool HasAllFlags(int32 Flags, const TEnum FlagsToCheck)
 		{
 			static_assert(TIsEnum<TEnum>::Value, TEXT("Should only call this with enum types."));
@@ -140,7 +140,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return Whether any of the FlagsToCheck are added/set in Flags.
 		 * @note To check if more than one flag is added/set, you can call the function like this: HasAnyFlags(Flags, EFlags::Flag1 | EFlags::Flag2);
 		 */
-		template <typename TEnum>
+		template<typename TEnum>
 		static bool HasAnyFlags(int32 Flags, const TEnum FlagsToCheck)
 		{
 			static_assert(TIsEnum<TEnum>::Value, TEXT("Should only call this with enum types."));
