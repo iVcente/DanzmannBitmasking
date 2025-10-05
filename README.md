@@ -8,6 +8,7 @@ The following functions are available:
 * `HasAnyFlags()`.
 
 ## Usage Example
+> Make sure you have added the `DanzmannBitmasking` module to your project's `Build.cs` file. Also, enable `DanzmannBitmasking` in your `.uproject` file.
 
 Create an enum that allows bitmasking by adding the required specifiers and macros, like this:
 
