@@ -7,9 +7,7 @@ The following functions are available:
 * `HasAllFlags()`;
 * `HasAnyFlags()`.
 
----
-
-### Usage Example
+## Usage Example
 
 Create an enum that allows bitmasking by adding the required specifiers and macros, like this:
 
