@@ -7,7 +7,7 @@
 #include "DanzmannBitmaskingFunctionLibrary.generated.h"
 
 /**
- * Function Library to provide generic functions to most common bitmasks operations.
+ * Function Library to provide generic functions to most common bitmask operations.
  */
 UCLASS()
 class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
