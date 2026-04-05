@@ -7,6 +7,8 @@ The following functions are available:
 * `HasAllFlags()`;
 * `HasAnyFlags()`.
 
+---
+
 ## Usage Example
 > Make sure you have added the `DanzmannBitmasking` module to your project's `Build.cs` file. Also, enable `DanzmannBitmasking` in your `.uproject` file.
 
@@ -97,5 +99,7 @@ class AExampleActor : public AActor
         int32 Debuffs = 0;
 };
 ```
+
 ---
-More info on enums can be found [here](https://www.notion.so/danzmann/Enums-53e162396fee4495b4475ee66c22081e?pvs=4).
+
+More info on enums can be found [here](http://danzmann.dev/#/posts/enums-what-whey-are-where-they-live-and-how-to-use-them).
