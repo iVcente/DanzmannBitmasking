@@ -7,6 +7,8 @@ The following functions are available:
 * `HasAllFlags()`;
 * `HasAnyFlags()`.
 
+More info on enums can be found [here](http://danzmann.dev/#/posts/enums-what-whey-are-where-they-live-and-how-to-use-them).
+
 ---
 
 ## Usage Example
@@ -81,6 +83,9 @@ class AExampleActor : public AActor
         }
 
     protected:
+        /**
+         * @see more info in Actor.h.
+         */
         virtual void BeginPlay() override
         {
             Super::BeginPlay();
@@ -99,7 +104,3 @@ class AExampleActor : public AActor
         int32 Debuffs = 0;
 };
 ```
-
----
-
-More info on enums can be found [here](http://danzmann.dev/#/posts/enums-what-whey-are-where-they-live-and-how-to-use-them).
