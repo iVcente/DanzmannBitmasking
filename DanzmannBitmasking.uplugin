@@ -6,7 +6,7 @@
 	"Description": "Simplifies bitmasks use in C++ and Blueprints by providing generic functions to most common operations.",
 	"Category": "Danzmann",
 	"CreatedBy": "Vicente Danzmann",
-	"CreatedByURL": "https://github.com/iVcente",
+	"CreatedByURL": "https://danzmann.dev/",
 	"DocsURL": "https://github.com/iVcente/DanzmannBitmasking/blob/main/README.md",
 	"MarketplaceURL": "",
 	"SupportURL": "",
@@ -14,6 +14,7 @@
 	"IsBetaVersion": false,
 	"IsExperimentalVersion": false,
 	"Installed": false,
+	"EnabledByDefault": true,
 	"Modules": [
 		{
 			"Name": "DanzmannBitmasking",
