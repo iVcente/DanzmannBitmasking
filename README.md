@@ -19,17 +19,17 @@ More info on enums can be found [here](http://danzmann.dev/#/posts/enums-what-wh
 Create an enum that allows bitmasking by adding the required specifiers and macros, like this:
 
 ```cpp
-// ExampleEnum.h
+// ElementType.h
 
 #pragma once
 
-#include "ExampleEnum.generated.h"
+#include "ElementType.generated.h"
 
 /**
  * Example enum that using bitmasks can be useful.
  */
 UENUM(BlueprintType, Meta = (Bitflags, UseEnumValuesAsMaskValuesInEditor = true))
-enum class EExampleEnum : uint8
+enum class EElementType : uint8
 {
     None      = 0 UMETA(Hidden), // 0x00
     Fire      = 1,               // 0x01 // 1 << 0
@@ -38,8 +38,8 @@ enum class EExampleEnum : uint8
     Poison    = 8                // 0x08 // 1 << 3
 };
 
-ENUM_CLASS_FLAGS(EExampleEnum)
-ENUM_RANGE_BY_FIRST_AND_LAST(EExampleEnum, EExampleEnum::None, EExampleEnum::Poison)
+ENUM_CLASS_FLAGS(EElementType)
+ENUM_RANGE_BY_FIRST_AND_LAST(EElementType, EElementType::None, EElementType::Poison)
 ```
 
 Then we can use the provided functions by the plugin along with the bitmask as such:
@@ -50,7 +50,7 @@ Then we can use the provided functions by the plugin along with the bitmask as s
 
 #include "CoreMinimal.h"
 #include "DanzmannBitmaskingFunctionLibrary.h"
-#include "ExampleEnum.h"
+#include "ElementType.h"
 #include "GameFramework/Actor.h"
 
 #include "ExampleActor.generated.h"
@@ -79,7 +79,7 @@ class AExampleActor : public AActor
          * @param NewDebuffs New debuffs.
          */
         UFUNCTION(BlueprintCallable)
-        void SetDebuffs(UPARAM(Meta = (Bitmask, BitmaskEnum = "/Script/MyProject.ExampleEnum")) const int32 NewDebuffs)
+        void SetDebuffs(UPARAM(Meta = (Bitmask, BitmaskEnum = "/Script/MyProject.ElementType")) const int32 NewDebuffs)
         {
             Debuffs = NewDebuffs;
         }
@@ -93,10 +93,10 @@ class AExampleActor : public AActor
             Super::BeginPlay();
 
             // Set actor's negative stats as fire and lightning
-            UDanzmannBitmaskingFunctionLibrary::AddFlags(Debuffs, EExampleEnum::Fire | EExampleEnum::Lightning);
+            UDanzmannBitmaskingFunctionLibrary::AddFlags(Debuffs, EElementType::Fire | EElementType::Lightning);
 
             // Check if actor has lightning or poison negative stats
-            bool bResult = UDanzmannBitmaskingFunctionLibrary::HasAnyFlags(Debuffs, EExampleEnum::Poison | EExampleEnum::Lightning);
+            bool bResult = UDanzmannBitmaskingFunctionLibrary::HasAnyFlags(Debuffs, EElementType::Poison | EElementType::Lightning);
         }
 
     private:
