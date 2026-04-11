@@ -22,7 +22,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return The new bitmask value with FlagsToAdd added/set on it.
 		 * @note You can use Make Bitmask node and pass it as an argument to Flags. You may choose which Enum class the node represents.
 		 */
-		UFUNCTION(BlueprintCallable, Category = "Dancing Man|Bitmasking", DisplayName = "Add Flags")
+		UFUNCTION(BlueprintCallable, Category = "Danzmann|Bitmasking", DisplayName = "Add Flags")
 		static int32 BP_AddFlags(int32 Flags, const int32 FlagsToAdd)
 		{
 			return Flags |= FlagsToAdd;
@@ -35,7 +35,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return The new bitmask value with FlagsToRemove removed/unset on it.
 		 * @note You can use Make Bitmask node and pass it as an argument to Flags. You may choose which Enum class the node represents.
 		 */
-		UFUNCTION(BlueprintCallable, Category = "Dancing Man|Bitmasking", DisplayName = "Remove Flags")
+		UFUNCTION(BlueprintCallable, Category = "Danzmann|Bitmasking", DisplayName = "Remove Flags")
 		static int32 BP_RemoveFlags(int32 Flags, const int32 FlagsToRemove)
 		{
 			return Flags &= ~FlagsToRemove;
@@ -48,7 +48,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return The new bitmask value with FlagsToFlip flipped on it.
 		 * @note You can use Make Bitmask node and pass it as an argument to Flags. You may choose which Enum class the node represents.
 		 */
-		UFUNCTION(BlueprintCallable, Category = "Dancing Man|Bitmasking", DisplayName = "Flip Flags")
+		UFUNCTION(BlueprintCallable, Category = "Danzmann|Bitmasking", DisplayName = "Flip Flags")
 		static int32 BP_FlipFlags(int32 Flags, const int32 FlagsToFlip)
 		{
 			return Flags ^= FlagsToFlip;
@@ -61,7 +61,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return Whether all FlagsToCheck are added/set in Flags.
 		 * @note You can use Make Bitmask node and pass it as an argument to Flags. You may choose which Enum class the node represents.
 		 */
-		UFUNCTION(BlueprintPure, Category = "Dancing Man|Bitmasking", DisplayName = "Has All Flags")
+		UFUNCTION(BlueprintPure, Category = "Danzmann|Bitmasking", DisplayName = "Has All Flags")
 		static bool BP_HasAllFlags(const int32 Flags, const int32 FlagsToCheck)
 		{
 			return (Flags & FlagsToCheck) != 0;
@@ -74,7 +74,7 @@ class UDanzmannBitmaskingFunctionLibrary : public UBlueprintFunctionLibrary
 		 * @return Whether any of the FlagsToCheck are added/set in Flags.
 		 * @note You can use Make Bitmask node and pass it as an argument to Flags. You may choose which Enum class the node represents.
 		 */
-		UFUNCTION(BlueprintPure, Category = "Dancing Man|Bitmasking", DisplayName = "Has Any Flags")
+		UFUNCTION(BlueprintPure, Category = "Danzmann|Bitmasking", DisplayName = "Has Any Flags")
 		static bool BP_HasAnyFlags(const int32 Flags, const int32 FlagsToCheck)
 		{
 			return (Flags & FlagsToCheck) == FlagsToCheck;
