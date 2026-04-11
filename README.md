@@ -1,18 +1,20 @@
 # DanzmannBitmasking
+
 A plugin that simplifies bitmasks use in C++ and Blueprints by providing generic functions to most common operations.
 The following functions are available:
-* `AddFlags()`;
-* `RemoveFlags()`;
-* `FlipFlags()`;
-* `HasAllFlags()`;
-* `HasAnyFlags()`.
+- `AddFlags()`;
+- `RemoveFlags()`;
+- `FlipFlags()`;
+- `HasAllFlags()`;
+- `HasAnyFlags()`.
 
 More info on enums can be found [here](http://danzmann.dev/#/posts/enums-what-whey-are-where-they-live-and-how-to-use-them).
 
 ---
 
 ## Usage Example
-> Make sure you have added the `DanzmannBitmasking` module to your project's `Build.cs` file. Also, enable `DanzmannBitmasking` in your `.uproject` file.
+
+> Make sure you have added the `DanzmannBitmasking` module to your project's `Build.cs` file.
 
 Create an enum that allows bitmasking by adding the required specifiers and macros, like this:
 
