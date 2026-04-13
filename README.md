@@ -118,6 +118,6 @@ Create an integer variable to store your flags. Then, check `Bitmask` and set th
 
 ![integer-bitmask](https://github.com/user-attachments/assets/4285c369-fab6-454c-89ae-eff8f4d118d4)
 
-Then just use the plugin functions, and use the node Make Bitmask to make your life easier:
+Then just use the plugin functions, and use the node `Make Bitmask` to make your life easier:
 
 ![functions](https://github.com/user-attachments/assets/f3b50380-c1a2-4fb4-a412-af83fe3a973b)
