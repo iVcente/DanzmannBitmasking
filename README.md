@@ -111,11 +111,13 @@ class MYPROJECT_API AExampleActor : public AActor
 ### BP
 
 Create an enum that supports bitmasking by checking `Bitmask Flags`:
+
 ![enum-bitmask-flag](https://github.com/user-attachments/assets/9820bcab-6ec5-4036-bef1-fea0b28e8d0e)
 
 Create an integer variable to store your flags. Then, check `Bitmask` and set the just created enum in `Bitmask Enum`:
+
 ![integer-bitmask](https://github.com/user-attachments/assets/4285c369-fab6-454c-89ae-eff8f4d118d4)
 
 Then just use the plugin functions, and use the node Make Bitmask to make your life easier:
-![functions](https://github.com/user-attachments/assets/f3b50380-c1a2-4fb4-a412-af83fe3a973b)
 
+![functions](https://github.com/user-attachments/assets/f3b50380-c1a2-4fb4-a412-af83fe3a973b)
