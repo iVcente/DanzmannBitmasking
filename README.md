@@ -108,7 +108,7 @@ class MYPROJECT_API AExampleActor : public AActor
 };
 ```
 
-### Blueprints
+### BP
 
 Create an enum that supports bitmasking by checking `Bitmask Flags`:
 ![enum-bitmask-flag](https://github.com/user-attachments/assets/9820bcab-6ec5-4036-bef1-fea0b28e8d0e)
